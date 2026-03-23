@@ -1,9 +1,10 @@
 const express = require("express");
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("Hello Deployment!");
+app.get("/", (req,res)=>{
+ res.send("Hello Render Deployment");
 });
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log("Server running"));
+app.listen(3000,()=>{
+ console.log("Server running");
+});
